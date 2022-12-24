@@ -45,5 +45,37 @@ setTimeout(function(){
 
 }, 6000)
 
+// setInterval(function(){
+//     console.log("Sajid")
+// }, 1000)
+
+
 var timer = document.getElementById("timer")
-timer.innerHTML = "Time Change"
+var counter = 60
+
+var interval= setInterval(function(){
+    if(counter === 1){
+        clearInterval(interval);
+    }
+    timer.innerText = counter
+    counter--;
+}, 1000);
+
+
+var a=0;
+var fnc = setInterval(anime, 100)
+
+function anime(){
+    a =a+10;
+    if(a===400){
+        clearInterval(fnc);
+    } 
+    else{
+        var marg = document.getElementById('animeBox');
+        marg.style.marginLeft = a + "px";
+    }
+    
+    
+}
+
+
