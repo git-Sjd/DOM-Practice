@@ -31,3 +31,7 @@ img{
     width:400px;
     height: 400px;
 }
+#timer{
+    font-size: 70px;
+    margin: 50px;
+}
