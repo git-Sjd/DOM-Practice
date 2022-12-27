@@ -77,5 +77,12 @@ function anime(){
     
     
 }
+ 
+var navBar2 = document.getElementById("navBar");
+navBar2.addEventListener('click', function(){
+    navBar2.style.background = "green"
+})
+
+
 
 
