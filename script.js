@@ -93,12 +93,18 @@ function windowHeight(){
 
 let newTab;
 function openWindow(){
-    newTab = window.open("https://google.com", " ", "Height=400px,width=600px,top=200px,left=200px");
+    newTab = window.open("", " ", "Height=400px,width=600px,top=00px,left=1200px");
     newTab.focus();
     
 }
 function closeWindow(){
     newTab = window.close();
+}
+function moveBy(){
+    let abc = newTab.document.write("<p>This is my window</p>")
+    console.log(abc)
+    abc.moveTo(200,200)
+    
 }
 
 
