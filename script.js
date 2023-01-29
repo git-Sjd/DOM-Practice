@@ -83,6 +83,23 @@ navBar2.addEventListener('click', function(){
     navBar2.style.background = "green"
 })
 
+function windowHeight(){
+    console.clear()
+    console.log('Inner Height of the window is: ' + window.innerHeight)
+    console.log('Outer Height of the window is: ' + window.outerHeight)
+    console.log('Inner width of the window is: ' + window.innerWidth)
+    console.log('Outer Height of the window is: ' + window.outerWidth)
+}
+
+let newTab;
+function openWindow(){
+    newTab = window.open("https://google.com", " ", "Height=400px,width=600px,top=200px,left=200px");
+    newTab.focus();
+    
+}
+function closeWindow(){
+    newTab = window.close();
+}
 
 
 
